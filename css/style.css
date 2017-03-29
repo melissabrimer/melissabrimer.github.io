@@ -250,11 +250,13 @@ h1 {
 
 .about-us-text-device-container {
   display: flex;
-  min-height: 200px;
-  width: 100%;
-  justify-content: flex-start;
+  height: 320px;
+  width: 95%;
+  justify-content: center;
   align-items: center;
   flex-flow: column;
+  background-color: white;
+  /*border-top: 20px solid #ececec;*/
 }
 
 .about-us-text-device {
@@ -502,6 +504,7 @@ textarea:focus, input:focus {
       height: 100vh;
   }
 
+
   li a {
       color: black !important;
       text-align: left;
@@ -522,6 +525,28 @@ textarea:focus, input:focus {
   .about-us-text-container {
       width: 80%;
   }
+}
+
+@media (max-width: 992px) {
+
+    .about-us-bottom {
+      width: 95%;
+    }
+
+    .about-us-top {
+      width: 95%;
+    }
+
+    .no-padding {
+      padding: 30px;
+      margin: 0;
+    }
+
+    .about-us-text-column {
+      background-color: white;
+      width: 100%;
+      margin-bottom: 40px;
+    }
 }
 
 @media (max-width: 980px) {
