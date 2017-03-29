@@ -55,10 +55,20 @@ li a {
   margin-right: 60px !important;
   margin-top: 35px;
 }
+
+.navbar-toggle {
+    border: 0 !important;
+}
+
+.icon-bar {
+    background-color: white !important;
+    height: 3px !important;
+    width: 30px !important;
+}
 /*This is the stlyling for the hero*/
 
 #hero {
-  /*background-image: linear-gradient(to bottom, #232323, #232323 50%, black 50%, black);*/
+  background-image: linear-gradient(to bottom right, purple 30%, coral);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -105,8 +115,8 @@ h2 {
 }
 
 
-.pure-good {
-  background-color: aquamarine;
+.parts-awesome {
+  background-color: white;
   padding: 8px 30px 15px 30px;
 }
 
@@ -170,9 +180,25 @@ h1 {
   height: 400px;
   width: 100%;
 }
+
+
+.about-us-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-image: linear-gradient(0deg, aquamarine, aquamarine), url('../img/james.jpg');
+  background-color: white;
+  background-blend-mode: multiply, luminosity;
+  height: 400px;
+  width: 100%;
+}
+
 /*photo hover styling*/
 
-.photo-hover {
+ .photo-hover {
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
 }
@@ -258,22 +284,6 @@ h1 {
 .about-us-text-device p {
   font-size: 16px;
   line-height: 30px;
-}
-
-
-
-.about-us-bottom {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-  background-image: linear-gradient(0deg, aquamarine, aquamarine), url('../img/james.jpg');
-  background-color: white;
-  background-blend-mode: multiply, luminosity;
-  height: 400px;
-  width: 100%;
 }
 
 .no-padding {
@@ -482,6 +492,22 @@ textarea:focus, input:focus {
 
   .work-together-container {
     height: 340px;
+  }
+
+  .navbar-collapse {
+      margin-top: 5px;
+      background-color: white;
+      position: absolute !important;
+      width: 100%;
+      height: 100vh;
+  }
+
+  li a {
+      color: black !important;
+      text-align: left;
+      font-size: 36px;
+      margin-top: 80px;
+      margin-bottom: 120px;
   }
 
 }
