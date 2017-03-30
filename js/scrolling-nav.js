@@ -11,10 +11,10 @@ $(document).ready(function() {      
             $("li a").css({"font-size": "15px", "color": "white", "margin-top": "-18px"});         
         } else {          
             $(".navbar").css({"background-color": "transparent", "height": "130px"});    
-            $(".navbar-brand h3").css({"font-size": "32px", "color": "black", "margin-bottom": "5px"});
-            $(".design-co").css({"font-size": "14px", "color": "black"});
+            $(".navbar-brand h3").css({"font-size": "32px", "color": "white", "margin-bottom": "5px"});
+            $(".design-co").css({"font-size": "14px", "color": "white"});
             $(".navbar-brand div").css("margin-top", "10px");
-            $("li a").css({"font-size": "18px", "color": "black", "margin-top": "0"});      
+            $("li a").css({"font-size": "18px", "color": "white", "margin-top": "0"});      
         }      
     });
  

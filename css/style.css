@@ -6,7 +6,7 @@ body {
 /*This is the styling for the nav*/
 
 li a {
-  color: black;
+  color: white;
   margin-right: 15px;
   font-size: 18px;
   transition: 1s;
@@ -16,7 +16,7 @@ li a {
   text-align: center;
   margin-left: 30px;
   margin-top: 10px;
-  color: black;
+  color: white;
   transition: 1s;
 }
 
@@ -199,8 +199,10 @@ h1 {
 /*photo hover styling*/
 
  .photo-hover {
-  background-color: rgba(0, 0, 0, 0.5);
+  /*background-color: rgba(0, 0, 0, 0.5);*/
+  background-image: linear-gradient(to bottom right, lightseagreen 30%, aquamarine);
   display: none;
+
 }
 
 .about-us-top:hover .photo-hover, .about-us-bottom:hover .photo-hover {
@@ -292,6 +294,8 @@ h1 {
   padding: 0;
   margin: 0;
 }
+
+
 /*our work section*/
 
 #our-work {
@@ -464,8 +468,81 @@ textarea:focus, input:focus {
   font-family: 'Permanent Marker', sans-serif;
   font-size: 22px;
 }
+ .button input:hover {
+   background-color: coral;
+   color: white;
+   transition: 1s;
+ }
+
+/*footer styling*/
+
+#footer {
+  background-color: coral;
+  min-height: 90px;
+  width: 100%;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 90px;
+}
+
+.footer-text {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 90px;
+}
+
+.copyright {
+  color: white;
+  text-transform: uppercase;
+  opacity: .65;
+  letter-spacing: .2em;
+  text-align: right;
+  margin-right: 30px;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 90px;
+}
+
+.fa-2x {
+  color: white;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.icons:first-child {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.icons:last-child {
+  margin-left: 30px;
+}
+
 
 /*media queries*/
+@media (max-width: 750px) {
+  .parts-awesome h1 {
+      font-size: 55px;
+  }
+
+  .parts-awesome {
+    background-color: white;
+    padding: 8px 20px 15px 20px;
+  }
+
+  .hero-text {
+    height: 300px;
+  }
+}
 
 @media (max-width: 767px) {
   .hero-half-text {
@@ -504,6 +581,15 @@ textarea:focus, input:focus {
       height: 100vh;
   }
 
+  h2 {
+    margin: 10px;
+    font-size: 16px;
+  }
+
+  .parts-awesome {
+    background-color: white;
+    padding: 8px 15px 15px 15px;
+  }
 
   li a {
       color: black !important;
@@ -513,9 +599,41 @@ textarea:focus, input:focus {
       margin-bottom: 120px;
   }
 
+  .navbar-brand div {
+    margin-left: 10px;
+    margin-top: -20px !important;
+  }
+
+  .design-co {
+    font-size: 14px;
+  }
+
+  .navbar-brand h3 {
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  .footer-icons {
+    justify-content: center;
+  }
+
+  .footer-text {
+    justify-content: center;
+    align-items: flex-start;
+    height: 50px;
+  }
+
+  .copyright {
+    margin-right: 0;
+  }
+
+  .icons:first-child {
+    margin-left: 0px;
+  }
+
 }
 
-@media (max-width: 846px) {
+@media (max-width: 847px) {
   h1 {
       font-size: 65px;
   }
@@ -538,7 +656,7 @@ textarea:focus, input:focus {
     }
 
     .no-padding {
-      padding: 30px;
+      /*padding: 30px;*/
       margin: 0;
     }
 
@@ -546,6 +664,10 @@ textarea:focus, input:focus {
       background-color: white;
       width: 100%;
       margin-bottom: 40px;
+    }
+
+    #hire-us {
+      margin-bottom: 160px;
     }
 }
 
