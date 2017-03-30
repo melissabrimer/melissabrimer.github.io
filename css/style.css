@@ -12,7 +12,7 @@ li a {
     transition: 1s;
     text-transform: uppercase;
     letter-spacing: .1em;
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 
 .navbar-brand div {
@@ -217,7 +217,7 @@ h1 {
     align-items: center;
     flex-flow: column;
     opacity: 0;
-    transition: 1s;
+    transition: .5s;
     background-color: coral;
 }
 
@@ -361,7 +361,6 @@ h1 {
 
 #sidedoor {
     background-image: url('../img/sidedoor.jpg');
-    background-position: left;
 }
 
 #party-pulse {
@@ -369,7 +368,7 @@ h1 {
 }
 
 #caps {
-    background-image: url('../img/CAPS.jpg');
+    background-image: url('../img/caps3.jpg');
 }
 
 #meeting-minds {
@@ -378,7 +377,7 @@ h1 {
 
 .projects-hover {
     opacity: 0;
-    transition: 1s;
+    transition: .5s;
     /*background-color: coral;*/
     display: flex;
     justify-content: flex-start;
@@ -533,7 +532,7 @@ textarea:focus, input:focus {
 .button input:hover {
     background-color: coral;
     color: white;
-    transition: 1s;
+    transition: .5s;
 }
 
 
